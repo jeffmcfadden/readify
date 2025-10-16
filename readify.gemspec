@@ -32,6 +32,7 @@ Gem::Specification.new do |spec|
   # Runtime dependencies
   spec.add_dependency "nokogiri", "~> 1.15"
   spec.add_dependency "http", "~> 5.0"
+  spec.add_dependency "brotli", "~> 0.7"
 
   # Development dependencies
   spec.add_development_dependency "tldr", "~> 1.0"

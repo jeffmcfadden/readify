@@ -22,13 +22,16 @@ def fetch_and_readify(url, output_file)
 
   puts "Readifying content..."
 
+  start = Time.now.to_f
   # Readify the content
   doc = Readify::Document.new(html)
-  doc.readify!
-  clean_html = doc.cleaned
+  clean_html = doc.readify!
+  duration = Time.now.to_f - start
+
+  puts "Processed in #{duration.round(2)} seconds"
 
   # Write to file
-  File.write(output_file, clean_html.to_html)
+  File.write(output_file, clean_html)
 
   puts "Saved to: #{output_file}"
   puts "Opening in browser..."
@@ -50,6 +53,7 @@ loop do
   # Reload all Readify source files
   load File.expand_path("../lib/readify/version.rb", __dir__)
   load File.expand_path("../lib/readify/document.rb", __dir__)
+  load File.expand_path("../lib/readify/document_cleaner.rb", __dir__)
   load File.expand_path("../lib/readify/document_fetcher.rb", __dir__)
   load File.expand_path("../lib/readify.rb", __dir__)
 
