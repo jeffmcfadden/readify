@@ -12,7 +12,7 @@ Gem::Specification.new do |spec|
   spec.description = "Readify takes HTML pages and strips them down to only the essential nodes, making content easier to read and process."
   spec.homepage = "https://github.com/jeffmcfadden/readify"
   spec.license = "MIT"
-  spec.required_ruby_version = ">= 2.7.0"
+  spec.required_ruby_version = ">= 3.2.0"
 
   spec.metadata["homepage_uri"] = spec.homepage
   spec.metadata["source_code_uri"] = spec.homepage
