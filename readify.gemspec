@@ -6,7 +6,7 @@ Gem::Specification.new do |spec|
   spec.name = "readify"
   spec.version = Readify::VERSION
   spec.authors = ["Jeff McFadden"]
-  spec.email = ["jeff@example.com"]
+  spec.email = ["jeffmcfadden@users.noreply.github.com"]
 
   spec.summary = "Extract the essential content from HTML pages"
   spec.description = "Readify takes HTML pages and strips them down to only the essential nodes, making content easier to read and process."
