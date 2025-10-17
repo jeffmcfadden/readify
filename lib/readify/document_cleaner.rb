@@ -32,7 +32,6 @@ module Readify
       title
     end
 
-    private
 
     def cleaned_html(html)
       doc = Nokogiri::HTML(html)
@@ -64,6 +63,8 @@ module Readify
 
       [title, content]
     end
+
+    private
 
     def prune(node:, matcher:)
       node.children.to_a.each do |child|
