@@ -25,7 +25,7 @@ require 'readify'
 
 html = File.read('article.html')
 doc = Readify::Document.new(html)
-clean_html = doc.extract
+clean_html = doc.readify!
 
 puts clean_html
 ```
