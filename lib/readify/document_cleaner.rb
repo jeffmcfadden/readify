@@ -23,6 +23,15 @@ module Readify
       HTML
     end
 
+    def title(html)
+      doc = Nokogiri::HTML(html)
+
+      title_node = doc.at('title')
+      title = title_node ? title_node.text.strip : ""
+
+      title
+    end
+
     private
 
     def cleaned_html(html)
