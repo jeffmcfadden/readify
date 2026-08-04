@@ -1,3 +1,7 @@
+Outdated. Use [https://github.com/jeffmcfadden/detergent](https://github.com/jeffmcfadden/detergent) Instead.
+
+---
+
 # Readify
 
 Readify is a Ruby gem that extracts the essential content from HTML pages, stripping away navigation, ads, and other non-essential elements to leave only the main readable content.
